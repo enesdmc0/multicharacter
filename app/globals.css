@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.test {
+  background: linear-gradient(180deg, rgba(223, 222, 220, 0) 0%, #7f9392 100%);
+}
+
+.test1 {
+  background: linear-gradient(
+    97.57deg,
+    #c4b28c 0.88%,
+    rgba(196, 178, 140, 0) 80.16%
+  );
+}
+
+.test2 {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 217, 217, 0.8) 0%,
+    rgba(217, 217, 217, 0) 72.25%
+  );
+}
+
+.custom-scroll {
+  --sb-track-color: #8d8d8d;
+  --sb-thumb-color: #c4b28c;
+  --sb-size: 1.125rem;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 0.188rem;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 0.188rem;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .custom-scroll {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.shadow1 {
+  box-shadow: 0rem 0.25rem 0.25rem 0rem #0000004d;
+
+  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #00000026;
+}
+
+.shadow2 {
+  box-shadow: 0rem 0.25rem 0.25rem 0rem #0000004d;
+
+  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #00000026;
+}
+
+.shadow3 {
+  box-shadow: 0rem 0.5rem 0.25rem 0rem #00000080;
+}
+
+.shadow4 {
+  box-shadow: 0rem 0.25rem 0.25rem 0.313rem #00000040;
+}
+
+.shadow5 {
+  box-shadow: 0rem 0.25rem 0.25rem 0rem #0000004d;
+
+  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #00000026;
+}
+.shadow6 {
+  box-shadow: 0rem 0.063rem 0.188rem 0rem #0000004d;
+
+  box-shadow: 0rem 0.25rem 0.5rem 0.188rem #00000026;
+}
+
+.gradient1 {
+  background: linear-gradient(180deg, rgba(68, 75, 91, 0) 0%, #444b5b 100%);
+}
+
+/* test */
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (width: 1920px) and (height: 1080px) { /* - */
+  html { font-size: 16px;  }
+}
+
+@media screen and (width: 2560px) and (height: 1440px) { /* - */
+  html { font-size: 21.35px; }
+}
+
+@media screen and (width: 3840px) and (height: 2160px) {
+  html { font-size: 32px; }
+}
+
+@media screen and (width: 7680px) and (height: 4320px) {
+  html { font-size: 64px; }
+}
+
+@media screen and (width: 1280px) and (height: 720px) {
+  html { font-size: 10.7px; }
+}
+
+@media screen and (width: 854px) and (height: 480px) {
+  html { font-size: 7.15px; }
+}
+
+@media screen and (width: 640px) and (height: 360px) {
+  html { font-size: 5.35px; }
+}
